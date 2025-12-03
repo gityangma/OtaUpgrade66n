@@ -65,8 +65,8 @@ afterEvaluate {
                     developers {
                         developer {
                             id = 'gityangma' // 替换为你的GitHub用户名
-                            name = 'Your Name' // 替换为你的名字
-                            email = 'your.email@example.com' // 替换为你的邮箱
+                            name = 'yanghd' // 替换为你的名字
+                            email = 'yhd2020@hotmail.com' // 替换为你的邮箱
                         }
                     }
 
