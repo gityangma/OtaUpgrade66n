@@ -29,7 +29,7 @@ task javadoc(type: Javadoc) {
 
     // 必须添加Android的classpath
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    classpath += configurations.implementation // 添加依赖的classpath
+//    classpath += configurations.implementation // 添加依赖的classpath
 }
 
 // Javadoc JAR任务
