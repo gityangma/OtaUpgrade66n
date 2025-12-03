@@ -1,0 +1,87 @@
+apply plugin: 'maven-publish'
+
+// 指定group，com.github.<用户名>，请替换为你的GitHub用户名
+group = 'com.github.gityangma'
+
+// 指定编码
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType(Javadoc) {
+    options.encoding = 'UTF-8'
+}
+
+// 源码JAR任务
+task sourcesJar(type: Jar) {
+    archiveClassifier  = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+// Javadoc任务
+task javadoc(type: Javadoc) {
+    failOnError false
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+// Javadoc JAR任务
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier  = 'javadoc'
+    from javadoc.destinationDir
+}
+
+// 发布配置
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+
+                afterEvaluate {
+                    from components.findByName('release')
+                }
+
+                groupId = 'com.github.gityangma' // 替换为你的GitHub用户名
+                artifactId = 'otaUpgrade'
+                version = '1.0.0'
+
+                // 添加源码和文档
+                artifact(sourcesJar)
+                artifact(javadocJar)
+
+                // POM配置
+                pom {
+                    name = 'OtaUpgrade'
+                    description = 'Android OTA升级库'
+                    url = 'https://github.com/gityangma/OtaUpgrade66n' // 替换为你的GitHub仓库地址
+
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = 'gityangma' // 替换为你的GitHub用户名
+                            name = 'Your Name' // 替换为你的名字
+                            email = 'your.email@example.com' // 替换为你的邮箱
+                        }
+                    }
+
+                    scm {
+                        connection = 'scm:git:github.com/gityangma/OtaUpgrade66n.git' // 替换为你的GitHub仓库地址
+                        developerConnection = 'scm:git:ssh://github.com/gityangma/OtaUpgrade66n.git' // 替换为你的GitHub仓库地址
+                        url = 'https://github.com/gityangma/OtaUpgrade66n' // 替换为你的GitHub仓库地址
+                    }
+                }
+            }
+        }
+    }
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
