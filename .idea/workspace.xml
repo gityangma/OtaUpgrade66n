@@ -16,10 +16,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/03">
+    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/03 修改jitpack 配置">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JitPackUpload.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/JitPackUpload.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jitpack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jitpack.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764731190796</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2025/12/03 修改jitpack 配置">
+      <option name="closed" value="true" />
+      <created>1764734639874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764734639874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +256,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2025/12/02" />
     <MESSAGE value="2025/12/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025/12/03" />
+    <MESSAGE value="2025/12/03 修改jitpack 配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025/12/03 修改jitpack 配置" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

@@ -28,7 +28,7 @@ task javadoc(type: Javadoc) {
     exclude("**/R.java", "**/BuildConfig.java") // 排除自动生成的文件
 
     // 必须添加Android的classpath
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 //    classpath += configurations.implementation // 添加依赖的classpath
 }
 
