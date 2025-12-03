@@ -1,9 +1,9 @@
 jdk:
   - openjdk17
   
-before_install:
-  - sdk install android-sdk
-  - sdk update
-  
-script:
-  - ./gradlew :otaUpgrade:assembleRelease :otaUpgrade:publishReleasePublicationToMavenLocal
+#before_install:
+#  - sdk install android-sdk
+#  - sdk update
+#
+#script:
+#  - ./gradlew :otaUpgrade:assembleRelease :otaUpgrade:publishReleasePublicationToMavenLocal

@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-//    id 'maven-publish'
+    id 'maven-publish'
 }
 
 android {
@@ -36,5 +36,31 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-apply from: '../JitPackUpload.gradle'
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.gityangma'
+            artifactId = 'OtaUpgrade66n'
+//            version = android.defaultConfig.versionName
+            version = '1.0.6'
+            // 指定 aar 文件的确切路径：https://cloud.tencent.com/developer/ask/sof/106381154
+            afterEvaluate {
+                artifact(bundleReleaseAar)
+            }
+
+            // 修正 Maven 插件在生成的 pom 文件没有携带 dependencies 信息的问题
+            // 用于测试 Gradle 命令：./gradlew publishToMavenLocal
+            pom.withXml {
+                def dependencies = asNode().appendNode('dependencies')
+                configurations.implementation.allDependencies.each {
+                    def dependency = dependencies.appendNode('dependency')
+                    dependency.appendNode('groupId', it.group)
+                    dependency.appendNode('artifactId', it.name)
+                    dependency.appendNode('version', it.version)
+                    dependency.appendNode('scope', 'runtime')
+                }
+            }
+        }
+    }
+}
 
