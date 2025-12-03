@@ -16,9 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/02">
-      <change beforePath="$PROJECT_DIR$/JitPackUpload.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/JitPackUpload.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/03" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +25,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Yang\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=c4733f25;connection=70510007)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -190,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764726599155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2025/12/03">
+      <option name="closed" value="true" />
+      <created>1764726931419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764726931419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +212,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2025/12/02" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025/12/02" />
+    <MESSAGE value="2025/12/03" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025/12/03" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
