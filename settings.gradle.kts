@@ -20,6 +20,8 @@ dependencyResolutionManagement {
     }
 }
 
+
+
 rootProject.name = "OtaUpgrade66n"
 include(":app")
 include(":otaUpgrade")
