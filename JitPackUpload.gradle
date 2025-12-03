@@ -20,16 +20,19 @@ task sourcesJar(type: Jar) {
 
 // Javadoc任务
 task javadoc(type: Javadoc) {
+    enabled = false
+
 //    failOnError false
 //    source = android.sourceSets.main.java.srcDirs
 //    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    source = android.sourceSets.main.java.srcDirs
-    include("**/*.java") // 明确包含Java文件
-    exclude("**/R.java", "**/BuildConfig.java") // 排除自动生成的文件
+//    source = android.sourceSets.main.java.srcDirs
+//    include("**/*.java") // 明确包含Java文件
+//    exclude("**/R.java", "**/BuildConfig.java") // 排除自动生成的文件
 
     // 必须添加Android的classpath
 //    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 //    classpath += configurations.implementation // 添加依赖的classpath
+
 }
 
 // Javadoc JAR任务

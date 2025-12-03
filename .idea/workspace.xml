@@ -16,8 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/03 修改jitpack 配置">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="e3496f7f-e0df-4bde-93a5-8a86dece9e0d" name="Changes" comment="2025/12/03 修改jitpack 配置1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JitPackUpload.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/JitPackUpload.gradle" afterDir="false" />
     </list>
@@ -239,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764734639874</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2025/12/03 修改jitpack 配置1">
+      <option name="closed" value="true" />
+      <created>1764735213581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764735213581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +264,8 @@
     <MESSAGE value="2025/12/02" />
     <MESSAGE value="2025/12/03" />
     <MESSAGE value="2025/12/03 修改jitpack 配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025/12/03 修改jitpack 配置" />
+    <MESSAGE value="2025/12/03 修改jitpack 配置1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025/12/03 修改jitpack 配置1" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
